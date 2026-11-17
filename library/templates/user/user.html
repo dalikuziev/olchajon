@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}
+User
+{% endblock %}
+{% block content %}
+<h1>Barcha foydalanuvchilar:</h1>
+<ol>
+    {% for user in users %}
+        <li>
+            {{ user.first_name }}
+            {{ user.last_name }}
+        </li>
+    {% endfor %}
+</ol>
+{% endblock %}

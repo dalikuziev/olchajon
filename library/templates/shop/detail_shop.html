@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}
+Detail Shop
+{% endblock %}
+{% block content %}
+<h1>{{ shop.name }} do'koni</h1>
+
+<h2>
+    turi: {{ shop.turi }}
+</h2>
+<h2>
+    nomi: {{ shop.name }}
+</h2>
+<h2>
+    narhi: {{ shop.price }}
+</h2>
+<h2>
+    manzili: {{ shop.address }}
+</h2>
+<form action="{% url 'shops' %}">
+    <button>
+        orqaga
+    </button>
+</form>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}
+Detail user
+{% endblock %}
+{% block content %}
+<h1>{{ user.name }} foydalanuvchi</h1>
+
+<h2>
+    turi: {{ user.turi }}
+</h2>
+<h2>
+    nomi: {{ user.name }}
+</h2>
+<h2>
+    narhi: {{ user.price }}
+</h2>
+<h2>
+    manzili: {{ user.address }}
+</h2>
+<form action="{% url 'users' %}">
+    <button>
+        orqaga
+    </button>
+</form>
+{% endblock %}
